@@ -5,36 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TE LO VENDO</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
   </head>
   <body>
     <header>
       <h1 id="header"><i>Te lo Vendo</i></h1>
-      <div id="menuinicial">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              aria-current="page"
-              href="ejercicioGRUPAL1.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ejercicioGRUPAL1.html#productos"
-              >Productos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
+      <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-current="page" href="ejercicioGRUPAL1.html"
+                   >Home</a
+                >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ejercicioGRUPAL1.html#productos"
+                    >Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+     
     </header>
     <main onload="stringsDeFecha()" id="productos">
       <section>
@@ -42,37 +69,53 @@
 
         <ul>
           <li>
-            <h3 class="menu" ><span id="colorVerde">Combo 1</span></h3>
+            <h3 class="menu"><span id="colorVerde">Combo 1</span></h3>
             <p class="menucomida">
-              <span id="colorVerde"> Hambgurguesax2 + bebida mediada + papas fritas </span>
+              <span id="colorVerde">
+                Hambgurguesax2 + bebida mediada + papas fritas
+              </span>
             </p>
             <div class="text-center">
-              <a data-fancybox data-src="https://img.freepik.com/foto-gratis/hamburguesa-vegetariana-papas-fritas-bebida-mesa-madera_151341-1.jpg?w=2000" 
-                data-caption="Combo 1 a solo $4.990">
-                <img src="https://img.freepik.com/foto-gratis/hamburguesa-vegetariana-papas-fritas-bebida-mesa-madera_151341-1.jpg?w=2000"
-                id="imagenes"
-                class="img-fluid" />
+              <a
+                data-fancybox
+                data-src="https://img.freepik.com/foto-gratis/hamburguesa-vegetariana-papas-fritas-bebida-mesa-madera_151341-1.jpg?w=2000"
+                data-caption="Combo 1 a solo $4.990"
+              >
+                <img
+                  src="https://img.freepik.com/foto-gratis/hamburguesa-vegetariana-papas-fritas-bebida-mesa-madera_151341-1.jpg?w=2000"
+                  id="imagenes"
+                  class="img-fluid"
+                />
               </a>
             </div>
           </li>
           <li>
             <h3 class="menu"><span id="colorVerde">Combo 2</span></h3>
             <p class="menucomida">
-              <span id="colorVerde"> Hamburguesa doble de Vacuno + cerveza y papas fritas </span>
+              <span id="colorVerde">
+                Hamburguesa doble de Vacuno + cerveza y papas fritas
+              </span>
             </p>
             <div class="text-center">
-              <a data-fancybox data-src="https://img.freepik.com/foto-gratis/conjunto-cerveza-hamburguesa-papas-fritas-conjunto-estandar-bebidas-comida-pub-cerveza-bocadillos-fondo-oscuro-comida-rapida-comida-tradicional-americana_124865-9913.jpg?w=2000"
-                data-caption="Combo 2 a solo $3.990">
-                <img src="https://img.freepik.com/foto-gratis/conjunto-cerveza-hamburguesa-papas-fritas-conjunto-estandar-bebidas-comida-pub-cerveza-bocadillos-fondo-oscuro-comida-rapida-comida-tradicional-americana_124865-9913.jpg?w=2000"
-                id="imagenes"
-                class="img-fluid" />
+              <a
+                data-fancybox
+                data-src="https://img.freepik.com/foto-gratis/conjunto-cerveza-hamburguesa-papas-fritas-conjunto-estandar-bebidas-comida-pub-cerveza-bocadillos-fondo-oscuro-comida-rapida-comida-tradicional-americana_124865-9913.jpg?w=2000"
+                data-caption="Combo 2 a solo $3.990"
+              >
+                <img
+                  src="https://img.freepik.com/foto-gratis/conjunto-cerveza-hamburguesa-papas-fritas-conjunto-estandar-bebidas-comida-pub-cerveza-bocadillos-fondo-oscuro-comida-rapida-comida-tradicional-americana_124865-9913.jpg?w=2000"
+                  id="imagenes"
+                  class="img-fluid"
+                />
               </a>
             </div>
           </li>
         </ul>
       </section>
       <section>
-        <h2 class="inicioMenu"><span id="colorVerde">Lista de precios</span></h2>
+        <h2 class="inicioMenu">
+          <span id="colorVerde">Lista de precios</span>
+        </h2>
 
         <ol id="precios" class="list-group list-group-numbered">
           <li
@@ -82,7 +125,8 @@
               <div class="fw-bold">Combo 1</div>
               2 hamburguesas + bebida + papas fritas
             </div>
-            <span id="colorVerde"
+            <span
+              id="colorVerde"
               id="listaprecios"
               class="badge bg-primary rounded-pill listaprecios"
               >$4.990
@@ -95,37 +139,52 @@
               <div class="fw-bold">Combo 2</div>
               Hamburguesa doble de vacuno + cerveza + papas fritas
             </div>
-            <span id="colorVerde" class="badge bg-primary rounded-pill listaprecios"
+            <span
+              id="colorVerde"
+              class="badge bg-primary rounded-pill listaprecios"
               >$3.990
             </span>
           </li>
         </ol>
       </section>
 
-      <div class='container  my-5' id="gallery">
+      <div class="container my-5" id="gallery">
         <div class="row justify-content-center">
-        <div class="col-3">
-          <a href="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg">
-            <img class='img-fluid' src="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg" />
-          </a>
+          <div class="col-3">
+            <a
+              href="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
+            >
+              <img
+                class="img-fluid"
+                src="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
+              />
+            </a>
+          </div>
+          <div class="col-3">
+            <a
+              href="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
+            >
+              <img
+                class="img-fluid"
+                src="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
+              />
+            </a>
+          </div>
+          <div class="col-3">
+            <a
+              href="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
+            >
+              <img
+                class="img-fluid"
+                src="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
+              />
+            </a>
+          </div>
         </div>
-        <div class="col-3">
-          <a href="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg">
-            <img class='img-fluid' src="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg" />
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg">
-          <img class='img-fluid' src="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg" />
-          </a>
-        </div>
-
-      </div>
       </div>
     </main>
-    
+
     <div class="container">
-      
       <div class="row justify-content-center">
         <div class="col-4">
           <div class="row align-items-center">
@@ -161,9 +220,5 @@
     <script src="assets/script/index.js"></script>
     <script src="assets/script/JQuery.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
-
   </body>
 </html>
-
-
