@@ -1,0 +1,14 @@
+Grupo 5:  Angelo Espinoza | Nicolás Navea | Leonardo Zamora | René Sepúlveda |
+        Miguel Villarroel
+
+Se añade CDN de JQuery y FancyBox en nuestro archivo HTML
+Vinculamos .css de fancybox a nuestro archivo HTML
+Creamos un nuevo archivo .js llamado "JQuery" y lo vinculamos a los archivos HTML
+En el archivo HTML generamos un contenedor (div class=container) con el id=gallery, el cual contiene una fila (div class=row), que a su vez contiene 3 columnas (div class=col). 
+Cada una de estas columnas contiene un elemento de ancla (a) con una referencia a una imagen. 
+En su interior ademas poseen una etiqueta de imagen, con la imagen que se despliega en la pagina.
+Para activar el fancybox, en el archivo JQuery.js se escribio una funcion que se dispara con el inicio de la pagina ($(document).ready)), la cual posee una funcion que enlaza el id=gallery y todos sus anchor asociados a una galeria de imagenes.
+En la página de contacto ('contacto.html'), se agregó un contenedor con formulario, con la intención de que el cliente pueda elegir su menú, creado a partir del Widget 'selectMenu'. 
+Para esto, se agregó un (div class=contenedor), que contiene un row con las caracteristicas correspondientes a selectMenu. 
+Para implementarlo, se dividió en 3 columnas distribuidas de forma orizontal, cada una con una selección posible diferente (sandwich, bebida, acompañamiento). 
+Es importante señalar que este menú no puede (o no está linkeado aun para) entregar los valores como variables.

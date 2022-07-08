@@ -1,0 +1,199 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  text-align: center;
+  background-color: #a12312;
+  margin: 10px;
+}
+header > h1 {
+  color: whitesmoke;
+}
+nav {
+  background-color: rgb(227, 181, 65);
+  text-align: left;
+}
+main {
+  background-color: bisque;
+  background-image: url(https://previews.123rf.com/images/krekdm/krekdm1610/krekdm161000237/67736859-dibujado-a-mano-vector-de-patr%C3%B3n-de-comida-r%C3%A1pida-sin-problemas-los-elementos-de-comida-del-bosquejo.jpg);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+.inicioMenu {
+  text-align: center;
+}
+
+h1 {
+  font-size: 8vw;
+}
+h2 {
+  font-size: 5vw;
+  text-align: center;
+}
+h3 {
+  font-size: 3vw;
+}
+h4 {
+  font-size: 2vw;
+}
+h5 {
+  font-size: 2vw;
+}
+.menucomida {
+  font-size: 3vw;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(227, 181, 65);
+  margin-top: 30px;
+}
+
+#colorVerde {
+  background-color: #8fce00;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#imagenes {
+  max-width: 75vw;
+  margin-bottom: 10px;
+}
+
+#hover:hover {
+  color: rgb(64, 10, 114);
+  background-color: rgba(255, 217, 0, 0.856);
+}
+
+#hover_home {
+  background-color: rgb(168, 145, 17);
+  color: rgb(64, 10, 114);
+}
+
+#menuinicial {
+  font-size: 4vw;
+  background-color: rgb(227, 181, 65);
+}
+
+#formulario {
+  font-size: 2vw;
+}
+
+#precios {
+  margin: 30px;
+}
+
+.listaprecios {
+  font-size: 3vw;
+}
+
+.clasereloj {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.fechasreloj {
+  font-size: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.alignmentCenter{
+  text-align : center;
+}
+
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__backdrop::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  filter: blur(2px);
+  left: 50%;
+  top: 50%;
+  transform: scale(11);
+  opacity: 0.3;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fancybox__container {
+  --fancybox-bg: #000;
+
+  --fancybox-thumbs-width: 48px;
+  --fancybox-thumbs-ratio: 1;
+
+  --carousel-button-bg: rgb(91 78 76 / 74%);
+
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+
+  --carousel-button-svg-stroke-width: 2.5;
+}
+
+.fancybox__nav {
+  --carousel-button-svg-width: 24px;
+  --carousel-button-svg-height: 24px;
+}
+
+.fancybox__nav .carousel__button.is-prev {
+  left: 20px;
+}
+
+.fancybox__nav .carousel__button.is-next {
+  right: 20px;
+}
+
+.carousel__button.is-close {
+  right: auto;
+  top: 20px;
+  left: 20px;
+}
+
+.fancybox__slide {
+  padding: 8px 88px;
+}
+
+/* Thumbnails */
+.fancybox__thumbs .carousel__slide {
+  padding: 8px 8px 16px 8px;
+}
+
+.is-nav-selected::after {
+  display: none;
+}
+
+.fancybox__thumb {
+  border-radius: 6px;
+  opacity: 0.4;
+}
+
+.fancybox__thumb:hover,
+.is-nav-selected .fancybox__thumb {
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.is-nav-selected .fancybox__thumb::after {
+  display: none;
+}
+
+fieldset {
+  border: 0;
+}
+label {
+  display: block;
+  margin: 30px 0 0 0;
+}
+.overflow {
+  height: 200px;}
+
+#pedirComida{
+  font-size: 1vw;
+}
