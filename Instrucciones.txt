@@ -13,4 +13,4 @@ Para esto, se agregó un (div class=contenedor), que contiene un row con las car
 Para implementarlo, se dividió en 3 columnas distribuidas de forma orizontal, cada una con una selección posible diferente (sandwich, bebida, acompañamiento). 
 Es importante señalar que este menú no puede (o no está linkeado aun para) entregar los valores como variables.
 
-xxxxxxx
+xxxxxxxxx
