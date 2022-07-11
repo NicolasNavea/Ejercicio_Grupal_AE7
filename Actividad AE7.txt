@@ -1,0 +1,6 @@
+Miembros: Leonardo Zamora - Miguel Villarroel - Nicolás Navea - René Sepúlveda
+https://github.com/NicolasNavea/Ejercicio_Grupal_AE7
+Nicolas: En archivo "contacto.html" se borró "class='prueba'" en la línea 19
+Leonardo: En archivo "ejercicioGRUPAL1.html" se agregó navbar sin estilos
+Miguel: En archivo "Instrucciones.txt" se agregó "xxxxxxxxx" en la línea 16
+René: Creó archivo "equipo.txt"
