@@ -51,9 +51,3 @@ function currentTime() {
   }, 1000);
 }
 currentTime();
-
-function stringsDeFecha() {
-  let date = new Date();
-  alert(date);
-}
-
