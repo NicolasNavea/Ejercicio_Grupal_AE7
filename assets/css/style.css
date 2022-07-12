@@ -7,8 +7,8 @@ header {
   background-color: #a12312;
   margin: 10px;
 }
-header > h1 {
-  color: whitesmoke;
+#headerUno{
+  color: bisque;
 }
 nav {
   background-color: rgb(227, 181, 65);
@@ -53,8 +53,6 @@ footer {
 
 #colorVerde {
   background-color: #8fce00;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #imagenes {

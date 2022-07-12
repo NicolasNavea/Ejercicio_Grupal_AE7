@@ -56,3 +56,4 @@ function stringsDeFecha() {
   let date = new Date();
   alert(date);
 }
+
