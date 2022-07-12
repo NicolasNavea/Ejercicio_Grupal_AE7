@@ -7,8 +7,8 @@ header {
   background-color: #a12312;
   margin: 10px;
 }
-#headerUno{
-  color: bisque;
+#headerUno {
+  color: rgb(235, 226, 215);
 }
 nav {
   background-color: rgb(227, 181, 65);
@@ -71,7 +71,7 @@ footer {
 }
 
 #menuinicial {
-  font-size: 4vw;
+  font-size: 2vw;
   background-color: rgb(227, 181, 65);
 }
 
@@ -97,8 +97,8 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.alignmentCenter{
-  text-align : center;
+.alignmentCenter {
+  text-align: center;
 }
 
 a[data-fancybox] img {
@@ -190,8 +190,9 @@ label {
   margin: 30px 0 0 0;
 }
 .overflow {
-  height: 200px;}
+  height: 200px;
+}
 
-#pedirComida{
+#pedirComida {
   font-size: 1vw;
 }
