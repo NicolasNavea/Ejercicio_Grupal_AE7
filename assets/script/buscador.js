@@ -1,10 +1,11 @@
+import { calcArea } from "./first.js";
+
 function buscador() {
   const productos = [
     { nombre: "combo 1 hamburguesa x2", link: "combo1" },
     { nombre: "combo 2", link: "combo2" },
     { nombre: "Lista de precios", link: "listaPrecios" },
     { nombre: "Horario de cierre", link: "reloj" },
-    // { nombre: "Frutillas", link: "combo5" },
   ];
 
   const formulario = document.querySelector("#buscador");
