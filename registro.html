@@ -86,6 +86,33 @@
           placeholder="Juanito Perez Gonzalez"
         />
       </div>
+<!-- Seccion Rut -->
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Rut</label>
+        <input
+          name="rut"
+          id="rut"
+          type="text"
+          class="form-control"
+          placeholder="20.054.359-8"
+          onkeypress="return isNumber(event)"
+          oninput="checkRut(this)"
+          required
+        />
+      </div>
+      <div class="card-body">
+        <div
+          id="alerta"
+          class="alert alert-info alert-dismissible fade show col-3"
+          role="alert"
+        >
+          <span id="mensaje"
+            >Ingrese un RUT en el siguiente campo de texto para validar
+            si es correcto o no.</span
+          >
+        </div>
+      </div>
+
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"
           >Email address</label
@@ -135,5 +162,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="assets/script/index.js"></script>
     <script src="assets/script/JQuery.js"></script>
+    <script src="assets/script/verificador.js"></script>
   </body>
 </html>
