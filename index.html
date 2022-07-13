@@ -81,7 +81,8 @@
             <a class="btn btn-outline-success" id="botonBusqueda">Search</a>
             <ul id="resultado"></ul>
           </form>
-          <i class="fa-solid fa-cart-shopping popup" onmouseover="carritoPopUp()">
+          
+          <i class="fa-solid fa-cart-shopping popup" onclick="carritoPopUp()">
             <div id='myPopup' class="list-group popuptext">
               <aside class="col" id="comprasCarrito">
                 <h5>Tu compra</h5>
@@ -100,7 +101,7 @@
 
 
 
-    <main id="productos">
+    <main id="productos" onclick="carritoBlur()">
       <div class="container my-4">
         <div class="row justify-content-center">
           <div class="col-3 mx-3" id="colorVerde">
