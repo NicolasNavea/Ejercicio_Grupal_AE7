@@ -24,19 +24,23 @@ body {
 
 h1 {
   font-size: 5rem;
+  text-align: center;
 }
 h2 {
   font-size: 3rem;
   text-align: center;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
 }
 h4 {
-  font-size: 2vw;
+  font-size: 1.5rem;
+  text-align: center;
 }
 h5 {
-  font-size: 2vw;
+  font-size: 1rem;
+  text-align: center;
 }
 .menucomida {
   font-size: 1.5rem;
@@ -68,12 +72,12 @@ footer {
 }
 
 #menuinicial {
-  font-size: 2vw;
+  font-size: 2rem;
   background-color: rgb(227, 181, 65);
 }
 
 #formulario {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 #precios {
@@ -81,7 +85,7 @@ footer {
 }
 
 .listaprecios {
-  font-size: 3vw;
+  font-size: 1.5rem;
 }
 
 .clasereloj {
@@ -256,3 +260,4 @@ label {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
