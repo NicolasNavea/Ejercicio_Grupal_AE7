@@ -177,10 +177,9 @@ renderizarCarrito();
 
 function carritoPopUp() {
   var popup = document.getElementById("myPopup");
-  popup.classList.add("show");
-}
-
-function carritoBlur() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.remove("show");
+  if (popup.classList.contains("show")) {
+    popup.classList.remove("show");
+  } else {
+    popup.classList.add("show");
+  }
 }

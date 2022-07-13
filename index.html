@@ -66,8 +66,6 @@
             <li class="nav-item">
               <a class="nav-link active" href="registro.html">Registro</a>
             </li>
-
-
           </ul>
 
           <form class="d-flex" role="search">
@@ -99,9 +97,7 @@
       </div>
     </nav>
 
-
-
-    <main id="productos" onclick="carritoBlur()">
+    <main id="productos">
       <div class="container my-4">
         <div class="row justify-content-center">
           <div class="col-3 mx-3" id="colorVerde">
@@ -241,22 +237,23 @@
           </div>
         </div>
       </div>
-    </main>
-
-    <div class="container-fluid headerFooter" id="reloj">
-      <div class="row justify-content-evenly align-items-center">
-        <div class="col-4 fechasreloj">Cerramos a las 22:00 hrs</div>
-        <div class="col-4">
-          <div id="fecha" class="fechasreloj"></div>
+      <div class="container-fluid headerFooter" id="reloj">
+        <div class="row justify-content-evenly align-items-center">
+          <div class="col-4 fechasreloj">Cerramos a las 22:00 hrs</div>
+          <div class="col-4">
+            <div id="fecha" class="fechasreloj"></div>
+          </div>
         </div>
       </div>
+  
+    <div class="container">
+      <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
     </div>
+    </main>
 
-	<div class="container">
-		<div class="row">
-			<!-- Elementos generados a partir del JSON -->
-			<main id="items" class="col-sm-8 row"></main>
-	</div>
+
 	
     <footer class="container-fluid">
       <h3>Información de la empresa</h3>
