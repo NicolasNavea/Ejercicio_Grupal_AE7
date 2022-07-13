@@ -56,37 +56,39 @@ const DOMbotonVaciar = document.querySelector("#boton-vaciar");
  */
 function renderizarProductos() {
   baseDeDatos.forEach((info) => {
-    // Estructura
-    const miNodo = document.createElement("div");
-    miNodo.classList.add("card", "col-sm-4");
-    // Body
-    const miNodoCardBody = document.createElement("div");
-    miNodoCardBody.classList.add("card-body");
-    // Titulo
-    const miNodoTitle = document.createElement("h5");
-    miNodoTitle.classList.add("card-title");
-    miNodoTitle.textContent = info.nombre;
-    // Imagen
-    const miNodoImagen = document.createElement("img");
-    miNodoImagen.classList.add("img-fluid");
-    miNodoImagen.setAttribute("src", info.imagen);
-    // Precio
-    const miNodoPrecio = document.createElement("p");
-    miNodoPrecio.classList.add("card-text");
-    miNodoPrecio.textContent = `${info.precio}${divisa}`;
-    // Boton
-    const miNodoBoton = document.createElement("button");
-    miNodoBoton.classList.add("btn", "btn-primary");
-    miNodoBoton.textContent = "+";
-    miNodoBoton.setAttribute("marcador", info.id);
-    miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
-    // Insertamos
-    miNodoCardBody.appendChild(miNodoImagen);
-    miNodoCardBody.appendChild(miNodoTitle);
-    miNodoCardBody.appendChild(miNodoPrecio);
-    miNodoCardBody.appendChild(miNodoBoton);
-    miNodo.appendChild(miNodoCardBody);
-    DOMitems.appendChild(miNodo);
+    if (id != 0) {
+      // Estructura
+      const miNodo = document.createElement("div");
+      miNodo.classList.add("card", "col-sm-4");
+      // Body
+      const miNodoCardBody = document.createElement("div");
+      miNodoCardBody.classList.add("card-body");
+      // Titulo
+      const miNodoTitle = document.createElement("h5");
+      miNodoTitle.classList.add("card-title");
+      miNodoTitle.textContent = info.nombre;
+      // Imagen
+      const miNodoImagen = document.createElement("img");
+      miNodoImagen.classList.add("img-fluid");
+      miNodoImagen.setAttribute("src", info.imagen);
+      // Precio
+      const miNodoPrecio = document.createElement("p");
+      miNodoPrecio.classList.add("card-text");
+      miNodoPrecio.textContent = `${info.precio}${divisa}`;
+      // Boton
+      const miNodoBoton = document.createElement("button");
+      miNodoBoton.classList.add("btn", "btn-primary");
+      miNodoBoton.textContent = "+";
+      miNodoBoton.setAttribute("marcador", info.id);
+      miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
+      // Insertamos
+      miNodoCardBody.appendChild(miNodoImagen);
+      miNodoCardBody.appendChild(miNodoTitle);
+      miNodoCardBody.appendChild(miNodoPrecio);
+      miNodoCardBody.appendChild(miNodoBoton);
+      miNodo.appendChild(miNodoCardBody);
+      DOMitems.appendChild(miNodo);
+    }
   });
 }
 
@@ -158,16 +160,15 @@ function borrarItemCarrito(evento) {
  */
 function calcularTotal() {
   // Recorremos el array del carrito
-  return carrito
-    .reduce((total, item) => {
-      // De cada elemento obtenemos su precio
-      const miItem = baseDeDatos.filter((itemBaseDatos) => {
-        return itemBaseDatos.id === parseInt(item);
-      });
-      // Los sumamos al total
-      return total + miItem[0].precio;
-    }, 0)
-    .toFixed(2);
+  return carrito.reduce((total, item) => {
+    // De cada elemento obtenemos su precio
+    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+      return itemBaseDatos.id === parseInt(item);
+    });
+    // Los sumamos al total
+    return total + miItem[0].precio;
+  }, 0);
+  // .toFixed(2);
 }
 
 /**
@@ -195,3 +196,30 @@ function carritoPopUp() {
     popup.classList.add("show");
   }
 }
+
+function buscador() {
+  const formulario = document.querySelector("#buscador");
+  const boton = document.querySelector("#botonBusqueda");
+
+  const filtrar = function () {
+    link = "";
+    const texto = formulario.value.toLocaleLowerCase();
+
+    for (let producto of baseDeDatos) {
+      let nombre = producto.nombre.toLocaleLowerCase();
+      if (nombre.indexOf(texto) !== -1) {
+        link = producto.link;
+        console.log(link);
+        boton.href = `index.html#${link}`;
+      }
+    }
+    if (link === "") {
+      console.log(link);
+      alert("producto no encontrado");
+    }
+  };
+
+  boton.addEventListener("click", filtrar);
+}
+
+buscador();
