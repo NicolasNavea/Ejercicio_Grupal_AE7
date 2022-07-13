@@ -81,8 +81,18 @@
             <a class="btn btn-outline-success" id="botonBusqueda">Search</a>
             <ul id="resultado"></ul>
           </form>
-          <i class="fa-solid fa-cart-shopping mx-3 popup" onclick="carritoPopUp()">
-            <ul id="carrito myPopup" class="list-group"></ul>
+          <i class="fa-solid fa-cart-shopping popup" onmouseover="carritoPopUp()">
+            <div id='myPopup' class="list-group popuptext">
+              <aside class="col" id="comprasCarrito">
+                <h5>Tu compra</h5>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>$;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+              </aside>
+            </div>
           </i>
         </div>
       </div>
@@ -245,17 +255,6 @@
 		<div class="row">
 			<!-- Elementos generados a partir del JSON -->
 			<main id="items" class="col-sm-8 row"></main>
-			<!-- Carrito -->
-			<aside class="col-sm-4">
-				<h2>Carrito</h2>
-				<!-- Elementos del carrito -->
-				<ul id="carrito" class="list-group"></ul>
-				<hr>
-				<!-- Precio total -->
-				<p class="text-right">Total: <span id="total"></span>$;</p>
-				<button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-			</aside>
-		</div>
 	</div>
 	
     <footer class="container-fluid">
