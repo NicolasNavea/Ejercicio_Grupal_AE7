@@ -174,3 +174,8 @@ DOMbotonVaciar.addEventListener("click", vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+
+function carritoPopUp() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

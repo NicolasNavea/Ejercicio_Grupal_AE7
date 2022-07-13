@@ -23,6 +23,9 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="assets/images/burger-solid.svg">
+    
   </head>
   <body>
     <div class="container-fluid">
@@ -63,6 +66,8 @@
             <li class="nav-item">
               <a class="nav-link active" href="registro.html">Registro</a>
             </li>
+
+
           </ul>
 
           <form class="d-flex" role="search">
@@ -76,9 +81,14 @@
             <a class="btn btn-outline-success" id="botonBusqueda">Search</a>
             <ul id="resultado"></ul>
           </form>
+          <i class="fa-solid fa-cart-shopping mx-3 popup" onclick="carritoPopUp()">
+            <ul id="carrito myPopup" class="list-group"></ul>
+          </i>
         </div>
       </div>
     </nav>
+
+
 
     <main id="productos">
       <div class="container my-4">
