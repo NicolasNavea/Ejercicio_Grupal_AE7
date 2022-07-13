@@ -1,10 +1,10 @@
 function buscador() {
   const productos = [
-    { nombre: "combo 1", valor: "4990", link: "combo1" },
-    { nombre: "combo 2", valor: 3990, link: "combo2" },
-    { nombre: "Sandia", valor: 500, link: "combo3" },
-    { nombre: "Melon", valor: 500, link: "combo4" },
-    { nombre: "Frutillas", valor: 500, link: "combo5" },
+    { nombre: "combo 1 hamburguesa x2", link: "combo1" },
+    { nombre: "combo 2", link: "combo2" },
+    { nombre: "Lista de precios", link: "listaPrecios" },
+    { nombre: "Horario de cierre", link: "reloj" },
+    // { nombre: "Frutillas", link: "combo5" },
   ];
 
   const formulario = document.querySelector("#buscador");
