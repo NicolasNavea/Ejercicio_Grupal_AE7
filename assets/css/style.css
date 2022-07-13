@@ -30,7 +30,7 @@ h2 {
   text-align: center;
 }
 h3 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 h4 {
   font-size: 2vw;
@@ -256,3 +256,4 @@ label {
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
