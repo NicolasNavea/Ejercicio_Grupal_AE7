@@ -1,25 +1,20 @@
-$(document).ready(function(){
+$(document).ready(function () {
   Fancybox.bind("#gallery a", {
-    groupAll : true, // Group all items
-    on : {
-      ready : (fancybox) => {
+    groupAll: true, // Group all items
+    on: {
+      ready: (fancybox) => {
         console.log(`fancybox #${fancybox.id} is ready!`);
-      }
-    }
+      },
+    },
   });
 });
 
-$( function() {
-  $( "#speed" ).selectmenu();
+$(function () {
+  $("#speed").selectmenu();
 
-  $( "#files" ).selectmenu();
+  $("#files").selectmenu();
 
-  $( "#number" )
-    .selectmenu()
-    .selectmenu( "menuWidget" )
-      .addClass( "overflow" );
+  $("#number").selectmenu().selectmenu("menuWidget").addClass("overflow");
 
-  $( "#salutation" ).selectmenu();
-} );
-
-
+  $("#salutation").selectmenu();
+});
