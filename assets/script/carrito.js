@@ -6,6 +6,7 @@ const baseDeDatos = [
     precio: 1990,
     imagen:
       "https://www.lacocinachilena.tk/wp-content/uploads/2016/05/completo-italiano.jpg",
+    link: "completo",
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ const baseDeDatos = [
     precio: 1490,
     imagen:
       "https://tofuu.getjusto.com/orioneat-prod/CbrGRM6nq3nJCKBDb-Papas%20fritas%203.JPG",
+    link: "papasFritas",
   },
   {
     id: 3,
@@ -20,6 +22,7 @@ const baseDeDatos = [
     precio: 990,
     imagen:
       "https://www.tododisca.com/wp-content/uploads/2022/01/pesi-cola-1140x703.jpg",
+    link: "bebida",
   },
   {
     id: 4,
@@ -27,6 +30,15 @@ const baseDeDatos = [
     precio: 4990,
     imagen:
       "https://img.freepik.com/foto-gratis/hamburguesa-vegetariana-papas-fritas-bebida-mesa-madera_151341-1.jpg?w=2000",
+    link: "combo1",
+  },
+  {
+    id: 5,
+    nombre: "Combo 2",
+    precio: 3990,
+    imagen:
+      "https://img.freepik.com/foto-gratis/conjunto-cerveza-hamburguesa-papas-fritas-conjunto-estandar-bebidas-comida-pub-cerveza-bocadillos-fondo-oscuro-comida-rapida-comida-tradicional-americana_124865-9913.jpg?w=2000",
+    link: "combo2",
   },
 ];
 
