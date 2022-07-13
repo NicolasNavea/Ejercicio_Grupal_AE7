@@ -23,56 +23,68 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
     />
-
-
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <h1 id="headerUno">Te lo Vendo</h1>
-          </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center headerFooter">
+        <div class="col text-center">
+          <h1 id="headerUno">Te lo Vendo</h1>
         </div>
       </div>
+    </div>
 
+    <nav class="navbar navbar-expand-md sticky-top" id="menuinicial">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#productos"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="registro.html">Registro</a>
+            </li>
+          </ul>
 
-      <nav class="navbar navbar-expand-lg sticky-top" id="menuinicial">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html#productos">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="registro.html">Registro</a>
-              </li>
-            </ul>
-
-            
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Busca tu combo!" aria-label="Search" id="buscador">              
-              <a class="btn btn-outline-success" id="botonBusqueda" >Search</a>
-              <ul id="resultado">
-
-            </ul>
-            </form>
-          </div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Busca tu combo!"
+              aria-label="Search"
+              id="buscador"
+            />
+            <a class="btn btn-outline-success" id="botonBusqueda">Search</a>
+            <ul id="resultado"></ul>
+          </form>
         </div>
-      </nav>
-    
+      </div>
+    </nav>
+
     <main id="productos">
-      <div class="container">
+      <div class="container my-4">
         <div class="row justify-content-center">
           <div class="col-3 mx-3" id="colorVerde">
-            <h2 class="text-center"> Menú </h2>
+            <h2 class="text-center">Menú</h2>
           </div>
         </div>
       </div>
@@ -85,13 +97,13 @@
                 <h3 class="menu text-center" id="colorVerde"> Combo 1 </h3>
               </div>
             </div>
-            <div class="row" >
-              <div class="col-10" >
-                <h3 class="menucomida" id="colorVerde" >
+            <div class="row">
+              <div class="col-10">
+                <h3 class="menucomida" id="colorVerde">
                   Hambgurguesa x2 + bebida mediada + papas fritas
                 </h3>
               </div>
-            </div>  
+            </div>
             <div class="text-center">
               <a
                 data-fancybox
@@ -107,9 +119,9 @@
             </div>
           </li>
           <li id="combo2">
-            <div class="row" >
+            <div class="row">
               <div class="col-4">
-                <h2 class="menu text-center" id="colorVerde"> Combo 2 </h2>
+                <h2 class="menu text-center" id="colorVerde">Combo 2</h2>
               </div>
             </div>
             <div class="row">
@@ -131,8 +143,8 @@
                   class="img-fluid"
                 />
               </a>
-          </div>
-           </li>
+            </div>
+          </li>
         </ul>
       </div>
       <section>
@@ -170,51 +182,53 @@
           </li>
         </ol>
       </section>
-     <!--  fin seccion menu -->
-      <div class='container  my-5' id="gallery">
+      <!--  fin seccion menu -->
+      <div class="container my-5" id="gallery">
         <div class="row justify-content-center">
           <div class="col-3">
-            <a href="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg">
-              <img class='img-fluid' src="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg" />
+            <a
+              href="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
+            >
+              <img
+                class="img-fluid"
+                src="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
+              />
             </a>
           </div>
           <div class="col-3">
-            <a href="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg">
-              <img class='img-fluid' src="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg" />
+            <a
+              href="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
+            >
+              <img
+                class="img-fluid"
+                src="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
+              />
             </a>
           </div>
           <div class="col-3">
-            <a href="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg">
-              <img class='img-fluid' src="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg" />
-              </a>
+            <a
+              href="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
+            >
+              <img
+                class="img-fluid"
+                src="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
+              />
+            </a>
           </div>
         </div>
       </div>
     </main>
 
-    <div class="container" id="reloj">
-      <div class="row justify-content-center">
+    <div class="container-fluid headerFooter" id="reloj">
+      <div class="row justify-content-evenly align-items-center">
+        <div class="col-4 fechasreloj">Cerramos a las 22:00 hrs</div>
         <div class="col-4">
-          <div class="row align-items-center">
-            <div class="col">
-              <p class="clasereloj">Apurate!!</p>
-            </div>
-            <div class="row">
-              <div class="col">
-                <p class="clasereloj">Cerramos a las 22hrs</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div
-            id="fecha"
-            class="menucomida fechasreloj"
-          ></div>
+          <div id="fecha" class="fechasreloj"></div>
         </div>
       </div>
     </div>
-    <footer>
+
+    <footer class="container-fluid">
       <h3>Información de la empresa</h3>
       <h4>
         Angelo Espinoza | Nicolás Navea | Leonardo Zamora | René Sepúlveda |

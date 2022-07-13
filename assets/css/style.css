@@ -2,25 +2,25 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-header {
+.headerFooter {
   text-align: center;
   background-color: #a12312;
-  margin: 10px;
-}
-#headerUno {
   color: rgb(235, 226, 215);
+  /* margin: 10px; */
 }
+
 nav {
   background-color: rgb(227, 181, 65);
   text-align: left;
 }
-main {
+body {
   background-color: bisque;
   background-image: url(https://previews.123rf.com/images/krekdm/krekdm1610/krekdm161000237/67736859-dibujado-a-mano-vector-de-patr%C3%B3n-de-comida-r%C3%A1pida-sin-problemas-los-elementos-de-comida-del-bosquejo.jpg);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
+  /* padding-top: 2rem; */
+  /* padding-bottom: px; */
+  /* padding-left: 20px; */
 }
+
 .inicioMenu {
   text-align: center;
 }
