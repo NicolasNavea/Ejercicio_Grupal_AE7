@@ -227,5 +227,5 @@ function buscador() {
 
   boton.addEventListener("click", filtrar);
 }
-
+// actualizar
 buscador();
