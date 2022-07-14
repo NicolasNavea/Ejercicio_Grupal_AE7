@@ -123,8 +123,8 @@ a[data-fancybox] img {
 .fancybox__backdrop::after {
   content: "";
   position: absolute;
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
   filter: blur(2px);
   left: 50%;
   top: 50%;
