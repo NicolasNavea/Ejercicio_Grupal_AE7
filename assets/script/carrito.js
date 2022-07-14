@@ -10,6 +10,14 @@ const baseDeDatos = [
   },
   {
     id: 2,
+    nombre: "Churrasco",
+    precio: 2990,
+    imagen:
+      "https://tofuu.getjusto.com/orioneat-prod/Rvzo52Z32hgcw8Qw3-GRAN%20MAESTRO%20CHURRASCO%20ITALIANO.jpg",
+    link: "churrasco",
+  },
+  {
+    id: 3,
     nombre: "Papas fritas",
     precio: 1490,
     imagen:
@@ -17,7 +25,7 @@ const baseDeDatos = [
     link: "papasFritas",
   },
   {
-    id: 3,
+    id: 4,
     nombre: "Bebida",
     precio: 990,
     imagen:
@@ -25,7 +33,7 @@ const baseDeDatos = [
     link: "bebida",
   },
   {
-    id: 4,
+    id: 5,
     nombre: "Combo 1",
     precio: 4990,
     imagen:
@@ -33,7 +41,7 @@ const baseDeDatos = [
     link: "combo1",
   },
   {
-    id: 5,
+    id: 6,
     nombre: "Combo 2",
     precio: 3990,
     imagen:
@@ -58,7 +66,7 @@ function renderizarProductos() {
   baseDeDatos.forEach((info) => {
     // Estructura
     const miNodo = document.createElement("div");
-    miNodo.classList.add("card", "col-sm-4");
+    miNodo.classList.add("card", "col-lg-2", "col-md-4", "col-sm-6");
     // Body
     const miNodoCardBody = document.createElement("div");
     miNodoCardBody.classList.add("card-body");
@@ -158,16 +166,15 @@ function borrarItemCarrito(evento) {
  */
 function calcularTotal() {
   // Recorremos el array del carrito
-  return carrito
-    .reduce((total, item) => {
-      // De cada elemento obtenemos su precio
-      const miItem = baseDeDatos.filter((itemBaseDatos) => {
-        return itemBaseDatos.id === parseInt(item);
-      });
-      // Los sumamos al total
-      return total + miItem[0].precio;
-    }, 0)
-    .toFixed(2);
+  return carrito.reduce((total, item) => {
+    // De cada elemento obtenemos su precio
+    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+      return itemBaseDatos.id === parseInt(item);
+    });
+    // Los sumamos al total
+    return total + miItem[0].precio;
+  }, 0);
+  // .toFixed(2);
 }
 
 /**
@@ -195,3 +202,30 @@ function carritoPopUp() {
     popup.classList.add("show");
   }
 }
+
+function buscador() {
+  const formulario = document.querySelector("#buscador");
+  const boton = document.querySelector("#botonBusqueda");
+
+  const filtrar = function () {
+    link = "";
+    const texto = formulario.value.toLocaleLowerCase();
+
+    for (let producto of baseDeDatos) {
+      let nombre = producto.nombre.toLocaleLowerCase();
+      if (nombre.indexOf(texto) !== -1) {
+        link = producto.link;
+        console.log(link);
+        boton.href = `index.html#${link}`;
+      }
+    }
+    if (link === "") {
+      console.log(link);
+      alert("producto no encontrado");
+    }
+  };
+
+  boton.addEventListener("click", filtrar);
+}
+// actualizar
+buscador();

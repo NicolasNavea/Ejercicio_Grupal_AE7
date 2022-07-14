@@ -23,11 +23,15 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="icon" href="assets/images/sandwich-svgrepo-com.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@1&display=swap" rel="stylesheet">
-
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="icon" href="assets/images/sandwich-svgrepo-com.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container-fluid">
@@ -81,14 +85,14 @@
             <a class="btn btn-outline-success" id="botonBusqueda">Search</a>
             <ul id="resultado"></ul>
           </form>
-          
+
           <i class="fa-solid fa-cart-shopping popup" onclick="carritoPopUp()">
-            <div id='myPopup' class="list-group popuptext">
+            <div id="myPopup" class="list-group popuptext">
               <aside class="col" id="comprasCarrito">
                 <h5>Tu compra</h5>
                 <!-- Elementos del carrito -->
                 <ul id="carrito" class="list-group"></ul>
-                <hr>
+                <hr />
                 <!-- Precio total -->
                 <p class="text-right">Total: <span id="total"></span>$;</p>
                 <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
@@ -119,13 +123,13 @@
               <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col" ></div>
+              <div class="col"></div>
               <div class="col-6">
                 <h3 class="menucomida text-center" id="colorAmarillo">
                   Hamburguesa x2 + bebida mediada + papas fritas
                 </h3>
               </div>
-              <div class="col" ></div>
+              <div class="col"></div>
             </div>
             <div class="text-center">
               <a
@@ -143,20 +147,20 @@
           </li>
           <li id="combo2">
             <div class="row">
-              <div class="col" ></div>
+              <div class="col"></div>
               <div class="col-6">
                 <h3 class="menu text-center" id="colorRojo">Combo 2</h3>
               </div>
-              <div class="col" ></div>
+              <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col" ></div>
+              <div class="col"></div>
               <div class="col-6">
                 <h3 class="menucomida" id="colorAmarillo">
                   Hamburguesa doble de Vacuno + cerveza y papas fritas
                 </h3>
               </div>
-              <div class="col" ></div>
+              <div class="col"></div>
             </div>
             <div class="text-center">
               <a
@@ -212,41 +216,46 @@
       <!--  fin seccion menu -->
       <div class="container my-5" id="gallery">
         <div class="row justify-content-center">
-          <div class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2 width="100%" hight="100%"">
+          <div class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2">
             <a
               href="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
             >
               <img
-                class="img-fluid"
+                class="img-fluid imagenes"
                 src="https://www.achiga.cl/wp-content/uploads/2021/06/Hamurguesa_.jpeg"
               />
             </a>
           </div>
-          <div class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2 width="100%" hight="100%"">
+          <div class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2">
             <a
               href="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
             >
               <img
-                class="img-fluid"
+                class="img-fluid imagenes"
                 src="https://assets.adnradio.cl/2020/06/572bb4a1676e3795b24cbd2e713994b1-e1591732712152.jpg"
               />
             </a>
           </div>
-          <div
-            class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2"
-            width="100%" hight="100%"
-          >
+          <div class="col-10 col-sm-8 col-md-5 col-lg-3 m-1 m-ms-2">
             <a
               href="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
             >
               <img
-                class="img-fluid"
+                class="img-fluid imagenes"
                 src="https://media.chvnoticias.cl/2019/08/eltiopalton_67418627_617035315488998_7463725423743939321_n.jpg"
               />
             </a>
           </div>
         </div>
       </div>
+
+      <div class="container container-fluid">
+        <div class="row my-3 justify-content-center">
+          <!-- Elementos generados a partir del JSON -->
+          <main id="items" class="row text-center"></main>
+        </div>
+      </div>
+
       <div class="container-fluid headerFooter" id="reloj">
         <div class="row justify-content-evenly align-items-center">
           <div class="col-4 fechasreloj">Cerramos a las 22:00 hrs</div>
@@ -255,21 +264,12 @@
           </div>
         </div>
       </div>
-  
-    <div class="container">
-      <div class="row">
-        <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-8 row"></main>
-    </div>
     </main>
 
-
-	
     <footer class="container-fluid">
       <h3>Información de la empresa</h3>
       <h4>
-        Nicolás Navea | Leonardo Zamora | René Sepúlveda |
-        Miguel Villarroel
+        Nicolás Navea | Leonardo Zamora | René Sepúlveda | Miguel Villarroel
       </h4>
       <h5>Todos los derechos reservados, 2022</h5>
     </footer>
@@ -279,6 +279,6 @@
     <script src="assets/script/JQuery.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="assets/script/buscador.js"></script>
-	<script src="assets/script/carrito.js"></script>
+    <script src="assets/script/carrito.js"></script>
   </body>
 </html>
