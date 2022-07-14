@@ -56,6 +56,15 @@ footer {
   background-color: #8fce00;
 }
 
+#colorRojo {
+  background-color: #a12312;
+  color: rgb(235, 226, 215);
+}
+
+#colorAmarillo {
+  background-color: rgb(227, 181, 65);
+}
+
 #imagenes {
   max-width: 50vw;
   margin-bottom: 10px;
