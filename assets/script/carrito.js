@@ -10,6 +10,14 @@ const baseDeDatos = [
   },
   {
     id: 2,
+    nombre: "Churrasco",
+    precio: 2990,
+    imagen:
+      "https://tofuu.getjusto.com/orioneat-prod/Rvzo52Z32hgcw8Qw3-GRAN%20MAESTRO%20CHURRASCO%20ITALIANO.jpg",
+    link: "churrasco",
+  },
+  {
+    id: 3,
     nombre: "Papas fritas",
     precio: 1490,
     imagen:
@@ -17,7 +25,7 @@ const baseDeDatos = [
     link: "papasFritas",
   },
   {
-    id: 3,
+    id: 4,
     nombre: "Bebida",
     precio: 990,
     imagen:
@@ -25,7 +33,7 @@ const baseDeDatos = [
     link: "bebida",
   },
   {
-    id: 4,
+    id: 5,
     nombre: "Combo 1",
     precio: 4990,
     imagen:
@@ -33,7 +41,7 @@ const baseDeDatos = [
     link: "combo1",
   },
   {
-    id: 5,
+    id: 6,
     nombre: "Combo 2",
     precio: 3990,
     imagen:
@@ -56,39 +64,37 @@ const DOMbotonVaciar = document.querySelector("#boton-vaciar");
  */
 function renderizarProductos() {
   baseDeDatos.forEach((info) => {
-    if (id != 0) {
-      // Estructura
-      const miNodo = document.createElement("div");
-      miNodo.classList.add("card", "col-sm-4");
-      // Body
-      const miNodoCardBody = document.createElement("div");
-      miNodoCardBody.classList.add("card-body");
-      // Titulo
-      const miNodoTitle = document.createElement("h5");
-      miNodoTitle.classList.add("card-title");
-      miNodoTitle.textContent = info.nombre;
-      // Imagen
-      const miNodoImagen = document.createElement("img");
-      miNodoImagen.classList.add("img-fluid");
-      miNodoImagen.setAttribute("src", info.imagen);
-      // Precio
-      const miNodoPrecio = document.createElement("p");
-      miNodoPrecio.classList.add("card-text");
-      miNodoPrecio.textContent = `${info.precio}${divisa}`;
-      // Boton
-      const miNodoBoton = document.createElement("button");
-      miNodoBoton.classList.add("btn", "btn-primary");
-      miNodoBoton.textContent = "+";
-      miNodoBoton.setAttribute("marcador", info.id);
-      miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
-      // Insertamos
-      miNodoCardBody.appendChild(miNodoImagen);
-      miNodoCardBody.appendChild(miNodoTitle);
-      miNodoCardBody.appendChild(miNodoPrecio);
-      miNodoCardBody.appendChild(miNodoBoton);
-      miNodo.appendChild(miNodoCardBody);
-      DOMitems.appendChild(miNodo);
-    }
+    // Estructura
+    const miNodo = document.createElement("div");
+    miNodo.classList.add("card", "col-lg-2", "col-md-4", "col-sm-6");
+    // Body
+    const miNodoCardBody = document.createElement("div");
+    miNodoCardBody.classList.add("card-body");
+    // Titulo
+    const miNodoTitle = document.createElement("h5");
+    miNodoTitle.classList.add("card-title");
+    miNodoTitle.textContent = info.nombre;
+    // Imagen
+    const miNodoImagen = document.createElement("img");
+    miNodoImagen.classList.add("img-fluid");
+    miNodoImagen.setAttribute("src", info.imagen);
+    // Precio
+    const miNodoPrecio = document.createElement("p");
+    miNodoPrecio.classList.add("card-text");
+    miNodoPrecio.textContent = `${info.precio}${divisa}`;
+    // Boton
+    const miNodoBoton = document.createElement("button");
+    miNodoBoton.classList.add("btn", "btn-primary");
+    miNodoBoton.textContent = "+";
+    miNodoBoton.setAttribute("marcador", info.id);
+    miNodoBoton.addEventListener("click", anyadirProductoAlCarrito);
+    // Insertamos
+    miNodoCardBody.appendChild(miNodoImagen);
+    miNodoCardBody.appendChild(miNodoTitle);
+    miNodoCardBody.appendChild(miNodoPrecio);
+    miNodoCardBody.appendChild(miNodoBoton);
+    miNodo.appendChild(miNodoCardBody);
+    DOMitems.appendChild(miNodo);
   });
 }
 
