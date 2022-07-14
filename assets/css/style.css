@@ -24,6 +24,7 @@ body {
 
 h1 {
   font-size: 5rem;
+  text-align: center;
 }
 h2 {
   font-size: 3rem;
@@ -31,12 +32,15 @@ h2 {
 }
 h3 {
   font-size: 1.7rem;
+  text-align: center;
 }
 h4 {
   font-size: 1.5rem;
+  text-align: center;
 }
 h5 {
   font-size: 1rem;
+  text-align: center;
 }
 .menucomida {
   font-size: 1.5rem;
@@ -52,8 +56,17 @@ footer {
   background-color: #8fce00;
 }
 
+#colorRojo {
+  background-color: #a12312;
+  color: rgb(235, 226, 215);
+}
+
+#colorAmarillo {
+  background-color: rgb(227, 181, 65);
+}
+
 #imagenes {
-  max-width: 75vw;
+  max-width: 50vw;
   margin-bottom: 10px;
 }
 .imagenes {
